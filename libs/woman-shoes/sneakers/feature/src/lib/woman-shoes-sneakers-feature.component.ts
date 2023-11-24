@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { WomanShoesFacade } from '@draylegend/woman-shoes-domain';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -8,4 +9,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './woman-shoes-sneakers-feature.component.scss',
   templateUrl: './woman-shoes-sneakers-feature.component.html',
 })
-export default class WomanShoesSneakersFeatureComponent {}
+export default class WomanShoesSneakersFeatureComponent {
+  facade = inject(WomanShoesFacade);
+}

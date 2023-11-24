@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@draylegend/domain": ["libs/app/domain/src/index.ts"],
+      "@draylegend/woman-shoes-domain": [
+        "libs/woman-shoes/domain/src/index.ts"
+      ],
       "@draylegend/woman-shoes-sneakers-feature": [
         "libs/woman-shoes/sneakers/feature/src/index.ts"
       ]
