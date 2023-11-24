@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { WomanShoesFacade } from '@draylegend/woman-shoes-domain';
+import { WomanShoesFacade } from '@draylegend/woman-shoes/domain';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
