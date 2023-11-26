@@ -20,6 +20,7 @@ export default {
     },
     spacing: {
       '0.5': '0.5rem',
+      4: '16px',
     },
   },
 } satisfies Config;
