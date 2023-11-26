@@ -22,6 +22,9 @@
       ],
       "@draylegend/woman-shoes/sneakers/feature": [
         "libs/woman-shoes/sneakers/feature/src/index.ts"
+      ],
+      "@draylegend/woman-shoes/sneakers/ui": [
+        "libs/woman-shoes/sneakers/ui/src/index.ts"
       ]
     }
   },

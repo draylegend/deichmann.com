@@ -48,11 +48,19 @@ export interface Stock {
 
 export interface Tag {
   backgroundColor?: string;
-  code: string;
+  code: TagCode;
   description: string;
   fontColor?: string;
   frameColor?: string;
 }
+
+type TagCode =
+  | 'PriceReductionTag30'
+  | 'PriceReductionTag50'
+  | 'NewTag'
+  | 'OnlineExclusiveTag'
+  | 'SizeInformationTagXxl'
+  | 'SaleTag';
 
 export interface Category {
   code: string;

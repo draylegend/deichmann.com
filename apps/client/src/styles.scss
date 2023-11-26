@@ -6,10 +6,7 @@
   box-sizing: border-box;
 }
 
-body,
-app-root {
-  display: block flex;
-  flex-direction: column;
-  margin: 0;
-  height: 100svh;
+main {
+  width: min(100ch, 100% - 2rem);
+  margin-inline: auto;
 }
