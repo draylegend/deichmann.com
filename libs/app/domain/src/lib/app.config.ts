@@ -1,8 +1,19 @@
-import { ApplicationConfig } from '@angular/core';
+import {
+  provideHttpClient,
+  withFetch,
+  withInterceptors,
+} from '@angular/common/http';
+import { ApplicationConfig, makeEnvironmentProviders } from '@angular/core';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideRouter } from '@angular/router';
+import { assetsInterceptor, ENV, environment } from '@draylegend/shared/domain';
 import { appRoutes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideClientHydration(), provideRouter(appRoutes)],
+  providers: [
+    provideClientHydration(),
+    provideHttpClient(withFetch(), withInterceptors([assetsInterceptor])),
+    provideRouter(appRoutes),
+    makeEnvironmentProviders([{ provide: ENV, useValue: environment }]),
+  ],
 };

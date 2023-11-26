@@ -1,0 +1,32 @@
+@if (product.taglist[0].code === 'NewTag') {
+  <div class="badge rounded-full bg-white">
+    {{ product.taglist[0].description }}
+  </div>
+}
+
+@if (product.taglist[0].code.includes('PriceReductionTag')) {
+  <div class="bg-red badge rounded-full text-white">
+    {{ product.taglist[0].description }}
+  </div>
+}
+
+<img [alt]="product.description" [src]="product.images[0].url" />
+
+<section class="text-1.25 grid-">
+  <strong
+    [class.text-red]="product.allPrices[1].formattedValue"
+    class="text-green"
+  >
+    {{ product.price.formattedValue }}
+  </strong>
+
+  @if (product.allPrices[1].formattedValue) {
+    <del class="text-gray ml-0.5">{{
+      product.allPrices[1].formattedValue
+    }}</del>
+  }
+</section>
+
+<h3 class="text-1.25 truncate font-bold">{{ product.brandName }}</h3>
+
+<h4 class="text-1.25 truncate">{{ product.name }}</h4>

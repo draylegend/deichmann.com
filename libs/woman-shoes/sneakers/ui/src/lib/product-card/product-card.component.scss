@@ -1,0 +1,19 @@
+:host {
+  background: #f8f8f8;
+  display: block grid;
+
+  & > * {
+    &:not(img) {
+      margin: 0 1rem 0;
+    }
+
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .badge {
+    padding: 0.25rem 0.5rem;
+    margin: 1rem auto auto 1rem;
+  }
+}
