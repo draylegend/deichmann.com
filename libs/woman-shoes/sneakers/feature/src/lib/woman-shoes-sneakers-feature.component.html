@@ -1,5 +1,9 @@
-@for (product of facade.sneakers(); track product.articleNumber) {
-  <a [href]="'https://deichmann.com/de-de' + product.url" target="_blank">
-    <article [product]="product" product-card></article>
-  </a>
-}
+<section class="items">
+  @for (product of facade.paginated().items; track product.articleNumber) {
+    <a [href]="'https://deichmann.com/de-de' + product.url" target="_blank">
+      <article [product]="product" product-card></article>
+    </a>
+  }
+</section>
+
+<app-pagination [config]="facade.paginated()" class="flex" />

@@ -91,3 +91,9 @@ export interface Vendor {
   name: string;
   partner: boolean;
 }
+
+export interface PaginationConfig {
+  current: number;
+  items: Product[];
+  pages: number[];
+}
