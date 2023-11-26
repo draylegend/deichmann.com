@@ -1,4 +1,3 @@
-import { NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Product } from '@draylegend/woman-shoes/domain';
 
@@ -9,7 +8,6 @@ import { Product } from '@draylegend/woman-shoes/domain';
   standalone: true,
   styleUrl: './product-card.component.scss',
   templateUrl: './product-card.component.html',
-  imports: [NgIf, NgSwitch, NgSwitchCase, NgSwitchDefault],
 })
 export class ProductCardComponent {
   @Input({ required: true })
