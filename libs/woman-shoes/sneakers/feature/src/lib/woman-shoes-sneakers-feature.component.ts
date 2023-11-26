@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { WomanShoesFacade } from '@draylegend/woman-shoes/domain';
 import { ProductCardComponent } from '@draylegend/woman-shoes/sneakers/ui';
 
@@ -10,7 +9,7 @@ import { ProductCardComponent } from '@draylegend/woman-shoes/sneakers/ui';
   standalone: true,
   styleUrl: './woman-shoes-sneakers-feature.component.scss',
   templateUrl: './woman-shoes-sneakers-feature.component.html',
-  imports: [ProductCardComponent, RouterLink],
+  imports: [ProductCardComponent],
 })
 export default class WomanShoesSneakersFeatureComponent {
   facade = inject(WomanShoesFacade);
