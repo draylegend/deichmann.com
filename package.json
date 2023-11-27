@@ -6,6 +6,10 @@
     "email": "draylegend@gmail.com",
     "url": "https://github.com/draylegend/deichmann.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/draylegend/deichmann.com"
+  },
   "scripts": {
     "format": "nx format",
     "affected:lint": "nx affected:lint",
