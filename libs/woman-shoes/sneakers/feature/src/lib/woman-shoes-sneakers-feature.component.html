@@ -1,6 +1,6 @@
 <app-filter
-  (filterChange)="facade.navigateToAfterSearch = $event"
   class="sticky top-[0] w-[min(40ch,_100%_-_2rem)] place-self-center p-4"
+  (filterChange)="facade.navigateToAfterSearch = $event"
 ></app-filter>
 
 <section class="items">
@@ -11,4 +11,4 @@
   }
 </section>
 
-<app-pagination [config]="facade.paginated()" class="flex" />
+<app-pagination class="flex" [config]="facade.paginated()" />

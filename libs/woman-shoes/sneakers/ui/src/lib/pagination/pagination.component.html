@@ -1,8 +1,8 @@
 @for (page of config.pages; track page) {
   <button
+    class="rounded border p-1.5 p-4"
     [queryParams]="{ page: page }"
     [routerLink]="page.toString()"
-    class="rounded border p-1.5 p-4"
     [class.bg-green]="page === config.page"
   >
     {{ page + 1 }}
