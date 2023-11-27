@@ -2,7 +2,7 @@ name: RELEASE
 on: [workflow_dispatch]
 jobs:
   main:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
