@@ -11,8 +11,6 @@ import { PaginationConfig } from '@draylegend/woman-shoes/domain';
   imports: [RouterLink],
 })
 export class PaginationComponent {
-  pages: number[] = [];
-
   @Input({ required: true })
   config!: PaginationConfig;
 }
