@@ -6,19 +6,19 @@ import { WomanShoesService } from './woman-shoes.service';
 
 @Injectable()
 export class WomanShoesFacade {
-  #queryParams = signal({ current: 0, search: '' });
+  #queryParams = signal<QueryParams>({ page: 0, search: '' });
   #service = inject(WomanShoesService);
   #response = toSignal(this.#service.sneakers$, { initialValue: [] });
   #perPage = 12;
   paginated = computed(() => {
-    const { current, search } = this.#queryParams();
-    const start = current * this.#perPage;
+    const { page, search } = this.#queryParams();
+    const start = page * this.#perPage;
     const filtered = this.#response().filter(({ name }) =>
       name.toLowerCase().includes(search.toLowerCase()),
     );
 
     return {
-      current,
+      page,
       items: filtered.slice(start, start + this.#perPage),
       pages: Array.from({
         length: filtered.length / this.#perPage,

@@ -93,12 +93,12 @@ export interface Vendor {
 }
 
 export interface PaginationConfig {
-  current: number;
+  page: number;
   items: Product[];
   pages: number[];
 }
 
 export interface QueryParams {
-  current: number;
+  page: number;
   search: string;
 }

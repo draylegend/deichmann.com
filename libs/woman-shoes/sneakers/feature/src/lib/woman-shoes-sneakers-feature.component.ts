@@ -27,7 +27,7 @@ export default class WomanShoesSneakersFeatureComponent {
   // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input({ transform: (v: string | undefined) => Number(v ?? 0) })
   set page(current: number) {
-    this.facade.queryParams = { current };
+    this.facade.queryParams = { page: current };
   }
 
   /** Component input binding (search query param) */
