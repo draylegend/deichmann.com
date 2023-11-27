@@ -97,3 +97,8 @@ export interface PaginationConfig {
   items: Product[];
   pages: number[];
 }
+
+export interface QueryParams {
+  current: number;
+  search: string;
+}

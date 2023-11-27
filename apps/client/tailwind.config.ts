@@ -16,11 +16,15 @@ export default {
       white: 'white',
       green: '#00aa7a',
       red: '#e84747',
+      'light-gray': '#f8f8f8',
       gray: '#818788',
     },
     spacing: {
       '0.5': '0.5rem',
       4: '16px',
+    },
+    opacity: {
+      50: '0.5',
     },
   },
 } satisfies Config;
