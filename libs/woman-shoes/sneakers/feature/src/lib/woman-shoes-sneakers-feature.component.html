@@ -1,3 +1,8 @@
+<app-filter
+  (filterChange)="facade.navigateToAfterSearch = $event"
+  class="sticky top-[0] w-[min(40ch,_100%_-_2rem)] place-self-center p-4"
+></app-filter>
+
 <section class="items">
   @for (product of facade.paginated().items; track product.articleNumber) {
     <a [href]="'https://deichmann.com/de-de' + product.url" target="_blank">

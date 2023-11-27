@@ -1,0 +1,8 @@
+<form #f="ngForm" (ngSubmit)="filterChange.emit(f.value.search)">
+  <input
+    class="text-1.25 bg-light-gray/50 outline-gray w-full rounded-full p-4 backdrop-blur-sm"
+    name="search"
+    ngModel
+    placeholder="Suche"
+  />
+</form>
