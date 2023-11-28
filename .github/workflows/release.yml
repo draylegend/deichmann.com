@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write # to be able to publish a GitHub release
-      issues: none # to be able to comment on released issues
-      pull-requests: none # to be able to comment on released pull requests
-      id-token: none # to enable use of OIDC for npm provenance
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
     steps:
       - uses: actions/checkout@v2
         with:
