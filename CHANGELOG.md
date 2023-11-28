@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/draylegend/deichmann.com/compare/v1.0.0...v1.0.1) (2023-11-28)
+
+
+### Bug Fixes
+
+* **woman-shoes-sneakers-feature:** mobile version ([#17](https://github.com/draylegend/deichmann.com/issues/17)) ([9bd9e5b](https://github.com/draylegend/deichmann.com/commit/9bd9e5be88d336de143063fc6ef9664acbc5bfad))
+
 ## 1.0.0 (2023-11-27)
 
 
