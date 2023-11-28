@@ -6,7 +6,7 @@
 }
 
 @media (width < 580px) {
-  :host {
+  .items {
     column-gap: 4%;
     grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
   }
