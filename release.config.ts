@@ -17,12 +17,7 @@ export default {
   plugins: [
     '@semantic-release/commit-analyzer',
     '@semantic-release/release-notes-generator',
-    [
-      '@semantic-release/changelog',
-      {
-        changelogFile: `./CHANGELOG.md`,
-      },
-    ],
+    ['@semantic-release/changelog', { changelogFile: `./CHANGELOG.md` }],
     [
       '@semantic-release/exec',
       {
@@ -34,7 +29,7 @@ export default {
       {
         assets: [`libs/**/package.json`, `package.json`, `CHANGELOG.md`],
         message:
-          'chore(release): -v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
+          'chore(release): v${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
   ],
